@@ -14,12 +14,12 @@ class User {
     @get:NotBlank
     var userId: String? = null
 
-    @get:Min(0)
-    var cash: Int = 0
-
     @get:NotBlank
     @get:NotNull
     var userEmail: String? = null
+
+    @get:Min(0)
+    var cash: Int = 0
 
     @get:OneToMany(mappedBy ="user", cascade = [(CascadeType.ALL)])
     var ownedMovieTickets : MutableList<MovieTickets> = mutableListOf()
