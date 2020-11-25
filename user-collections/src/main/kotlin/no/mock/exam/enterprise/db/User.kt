@@ -17,5 +17,5 @@ class User {
     var userEmail: String? = null
 
     @get:OneToMany(mappedBy ="user", cascade = [(CascadeType.ALL)])
-    var ownedMovies : MutableList<MovieTickets> = mutableListOf()
+    var movieTickets : MutableList<MovieTickets> = mutableListOf()
 }
