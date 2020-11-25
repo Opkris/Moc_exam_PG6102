@@ -12,6 +12,7 @@
         <module>user-collections</module>
         <module>api-gateway</module>
         <module>auth</module>
+        <module>movie-dto</module>
     </modules>
 
 
